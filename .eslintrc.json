@@ -1,0 +1,48 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    "airbnb"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true,
+    "cypress/globals": true
+  },
+  "plugins": [
+    "cypress"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "react/jsx-filename-extension": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/destructuring-assignment": "off",
+    "jsx-quotes": ["error", "prefer-single"],
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/interactive-supports-focus": "off",
+    "semi": ["error", "never"],
+    "comma-dangle": ["error", "never"],
+    "arrow-parens": ["error", "as-needed"],
+    "no-multiple-empty-lines": ["error", {"max": 1, "maxEOF": 0}],
+    "object-curly-newline": ["error", { "multiline": true, "consistent": true }],
+    "space-before-function-paren": ["error", "always"],
+    "camelcase": "off",
+    "max-len": "off",
+    "cypress/no-assigning-return-values": "error",
+    "cypress/no-unnecessary-waiting": "error",
+    "cypress/assertion-before-screenshot": "warn",
+    "cypress/no-force": "warn",
+    "cypress/no-async-tests": "error"
+  }
+}
