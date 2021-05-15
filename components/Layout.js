@@ -7,13 +7,17 @@ const Layout = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <div className='bg-main bg-repeat bg-contain'>
-      <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      {!isMenuOpen && (
-      <>
-        {children}
-        <Footer />
-      </>
-      )}
+      <div className='max-w-screen-2xl mx-auto'>
+        <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        {!isMenuOpen && (
+        <>
+          <div className='p-8'>
+            {children}
+          </div>
+          <Footer />
+        </>
+        )}
+      </div>
     </div>
   )
 }
