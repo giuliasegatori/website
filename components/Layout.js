@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
         <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         {!isMenuOpen && (
         <>
-          <div className='p-8'>
+          <div className='px-8'>
             {children}
           </div>
           <Footer />

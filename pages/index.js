@@ -2,8 +2,8 @@ import Layout from '../components/Layout'
 
 const PayOff = () => (
   <div className='h-payoff relative'>
-    <div className='absolute bottom-2/5'>
-      <div className='font-bold lg:text-7xl lg:px-8 px-2 text-center text-2xl'>👋 Hey there, I’m Giulia!</div>
+    <div className='absolute bottom-2/5 lg:px-8 px-2'>
+      <div className='font-bold lg:text-7xl text-center text-2xl'>👋 Hey there, I’m Giulia!</div>
       <div className='lg:text-3xl lg:text-left text-center text-lg font-thin mt-12'>I am passionate about UX design</div>
 
     </div>
