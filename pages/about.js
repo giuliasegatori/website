@@ -9,10 +9,10 @@ const About = () => (
   <Layout>
     <Title isMobile />
     <div className='lg:flex lg:flex-row'>
-      <div className='lg:w-1/3 mx-auto h-64 w-64 bg-contain bg-giulia-linkedin rounded hover:bg-giulia-reality bg-no-repeat mt-8' />
+      <div className='lg:h-96 lg:w-96 mx-auto h-64 w-64 bg-contain bg-giulia-linkedin rounded hover:bg-giulia-reality bg-no-repeat mt-8' />
       <div className='lg:w-2/3 mt-8'>
         <Title />
-        <div className='text-center lg:text-left px-8 lg:mt-8'>When I was 6 years old I’ve reached one of my biggest achievements.
+        <div className='text-center lg:text-left  px-8 lg:mt-8'>When I was 6 years old I’ve reached one of my biggest achievements.
           Teachers asked the class to doodle something for the Elementary School Journal during the School Olympics and my “Girl that hugs a big trophy”, was chosen for the front page.
 
           I live in Rome and I currently work as UX & UI Designer and Junior Frontend Developer at MioAssicuratore.it, trying to make insurances more understable for users.
