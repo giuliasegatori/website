@@ -14,7 +14,7 @@ const PayOff = () => (
 const Content = () => (
   <>
     <div className='flex lg:flex-row flex-col items-center justify-around mt-16'>
-      <div className='bg-contain w-4/5 h-projects lg:w-projects bg-mio hover:bg-mio-hover bg-no-repeat cursor-pointer' />
+      <a href='/projects/mioassicuratore'><div className='bg-contain w-4/5 h-projects lg:w-projects bg-mio hover:bg-mio-hover bg-no-repeat cursor-pointer' /></a>
       <div className=' lg:mt-0 bg-contain h-projects w-4/5 lg:w-projects bg-aron hover:bg-aron-hover bg-no-repeat cursor-pointer' />
     </div>
     <div className='flex lg:flex-row flex-col items-center justify-around lg:mt-8'>
