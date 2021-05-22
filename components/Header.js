@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import CloseIcon from '@material-ui/icons/Close'
+import MenuIcon from '@material-ui/icons/Menu'
 
 const pages = [
   { label: 'Projects', link: '/' },
@@ -36,8 +38,8 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => (
     </div>
     <div className='lg:hidden mt-10'>
       {isMenuOpen
-        ? <div role='button' onClick={() => setIsMenuOpen(false)}><img src='/clear.png' alt='open menu' /></div>
-        : <div role='button' onClick={() => setIsMenuOpen(true)}><img src='/menu.png' alt='open menu' /></div>}
+        ? <div role='button' onClick={() => setIsMenuOpen(false)}><CloseIcon /></div>
+        : <div role='button' onClick={() => setIsMenuOpen(true)}><MenuIcon /></div>}
     </div>
 
   </div>
