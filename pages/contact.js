@@ -21,7 +21,7 @@ const Contact = () => (
         <input className='border-b p-2 mt-4' required type='text' name='name' placeholder='Your name' />
         <input className='border-b p-2 mt-4' required type='email' name='email' placeholder='Your email' />
         <textarea className='border-b p-2 mt-4 text-sm' rows='3' required type='text' name='message' placeholder='Message' />
-        <input className='mt-16 bg-giulia text-white p-4 text-lg font-semibold' type='submit' value='Submit' />
+        <input className='mt-16 bg-giulia text-white p-4 text-lg font-semibold rounded' type='submit' value='Submit' />
       </form>
     </div>
   </Layout>

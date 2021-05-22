@@ -5,7 +5,7 @@ const PayOff = () => (
   <div className='h-payoff relative'>
     <div className='absolute lg:bottom-2/5 bottom-1/2 lg:px-8 w-full'>
       <h1 className='font-bold lg:text-7xl text-center text-2xl'>👋 Hey there, I’m Giulia!</h1>
-      <h2 className='lg:text-3xl lg:text-left text-center text-lg font-thin mt-12'>
+      <h2 className='lg:text-3xl  text-center text-lg font-thin mt-12'>
         <Typewriter
           onInit={typewriter => {
             typewriter
@@ -36,7 +36,7 @@ const Content = () => (
   <>
     <div className='flex lg:flex-row flex-col items-center justify-around mt-16'>
       <a href='/projects/mioassicuratore'><div className='bg-contain w-4/5 h-projects lg:w-projects bg-mio hover:bg-mio-hover bg-no-repeat cursor-pointer' /></a>
-      <div className=' lg:mt-0 bg-contain h-projects w-4/5 lg:w-projects bg-aron hover:bg-aron-hover bg-no-repeat cursor-pointer' />
+      <a href='/projects/aron'> <div className=' lg:mt-0 bg-contain h-projects w-4/5 lg:w-projects bg-aron hover:bg-aron-hover bg-no-repeat cursor-pointer' /></a>
     </div>
     <div className='flex lg:flex-row flex-col items-center justify-around lg:mt-8'>
       <div className='bg-contain w-4/5 h-projects lg:w-projects bg-drawithme hover:bg-drawithme-hover bg-no-repeat cursor-pointer' />

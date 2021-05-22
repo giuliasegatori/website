@@ -18,7 +18,7 @@ const Aron = () => (
       </div>
 
       <div className='lg:hidden font-bold text-xl text-center mt-10'>Intuitive navigation and high visual impact design.</div>
-      <div className='lg:flex lg:w-full lg:mt-32'>
+      <div className='lg:flex lg:w-full lg:mt-32 lg:px-32'>
         <img src='/aron_mobile_gs.png' className='mt-8 lg:w-64' alt='mobile aron' />
         <div className='lg:w-3/4'>
           <div className='lg:block hidden lg:font-bold lg:text-4xl lg:text-left mt-10 lg:mt-20 lg:px-28'>Intuitive navigation and high visual impact design.</div>
