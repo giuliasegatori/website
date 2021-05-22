@@ -8,14 +8,16 @@ const pages = [
 ]
 
 const Menu = () => (
-  <div className='h-payoff mt-24 w-screen  bg-white absolute left-0 z-50'>
-    {pages.map((p, index) => (
-      <Link id={index} href={p.link}>
-        <div className='cursor-pointer'>
-          <div className='mt-4'>{p.label}</div>
-        </div>
-      </Link>
-    ))}
+  <div className='h-payoff mt-24 w-screen  bg-white absolute left-0 z-50 flex justify-center'>
+    <div className='flex flex-col mt-8'>
+      {pages.map((p, index) => (
+        <Link id={index} href={p.link}>
+          <div className='cursor-pointer'>
+            <div className='text-2xl mt-8'>{p.label}</div>
+          </div>
+        </Link>
+      ))}
+    </div>
   </div>
 )
 
