@@ -8,7 +8,7 @@ const Mioassicuratore_app = () => (
     <img src='/banner_app.png' alt='banner app MIO' className='mt-8 mx-auto' />
     <div className='max-w-screen-lg mx-auto'>
       <div className='text-center font-bold text-giulia mt-8'>MIO - Gestione Assicurazioni</div>
-      <div className='font-light italic text-gray-500 mt-2 text-center'>MioAssicuratore's App</div>
+      <div className='font-light italic text-gray-500 mt-2 text-center'>MioAssicuratore&lsquo;s App</div>
       <div className='mt-8 text-center'>
         <div className='mt-8 text-center'>
           <div className='font-bold'>Challenge:</div> MioAssicuratore.it provides insurance policies and quotes for 44.780 users

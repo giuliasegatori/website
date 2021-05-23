@@ -1,4 +1,5 @@
 import * as React from 'react'
+import LinkIcon from '@material-ui/icons/Link'
 import Layout from '../../components/Layout'
 import Breadcrumbs from '../../components/Breadcrumbs'
 
@@ -7,7 +8,10 @@ const Mioassicuratore = () => (
     <Breadcrumbs page='MioAssicuratore' />
     <img src='/mioassicuratore_gs_slider.png' alt='immagine mioassicuratore' className='mx-auto mt-4' />
     <div className='text-center mt-8'>
-      <a href='www.mioassicuratore.it' target='_blank'><div className='text-giulia font-bold'>MioAssicuratore.it</div></a>
+      <div className='flex justify-center text-giulia'>
+        <LinkIcon />
+        <a href='https://www.mioassicuratore.it' rel='noreferrer' target='_blank'><div className='font-bold ml-1'>MioAssicuratore.it</div></a>
+      </div>
       <div className='font-light italic text-gray-500 mt-2'>1st Italian Insurance Online Broker</div>
 
       <div className='mt-8 text-center'>

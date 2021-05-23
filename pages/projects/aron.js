@@ -1,4 +1,5 @@
 import * as React from 'react'
+import LinkIcon from '@material-ui/icons/Link'
 import Layout from '../../components/Layout'
 import Breadcrumbs from '../../components/Breadcrumbs'
 
@@ -7,7 +8,10 @@ const Aron = () => (
     <Breadcrumbs page='Aron' />
     <img src='/aron_mioassicuratore_gs.png' alt='immagine aron' className='mx-auto mt-4' />
     <div className='text-center mt-8'>
-      <a href='https://www.aroninsurtech.com/' target='_blank' rel='noreferrer'><div className='text-giulia font-bold'>Aron</div></a>
+      <div className='flex justify-center text-giulia'>
+        <LinkIcon />
+        <a href='https://www.aroninsurtech.com/' rel='noreferrer' target='_blank'><div className='font-bold ml-1'>Aron</div></a>
+      </div>
       <div className='font-light italic text-gray-500 mt-2'>Highly Technological Structured Microservices Insurtech Platform</div>
     </div>
 

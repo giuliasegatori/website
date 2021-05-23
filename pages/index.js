@@ -1,5 +1,6 @@
 import Typewriter from 'typewriter-effect'
 import Image from 'next/image'
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward'
 import Layout from '../components/Layout'
 
 const PayOff = () => (
@@ -30,7 +31,7 @@ const PayOff = () => (
 
     </div>
     <a href='#projects'>
-      <img src='/right-arrow.png' alt='go down' className='inset-x-0 mx-auto bottom-0 absolute pb-4 animate-bounce' />
+      <ArrowDownwardIcon className='text-7xl inset-x-0 mx-auto bottom-0 absolute pb-4 animate-bounce' />
     </a>
   </div>
 )
