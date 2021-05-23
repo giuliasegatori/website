@@ -1,10 +1,11 @@
 import Typewriter from 'typewriter-effect'
+import Image from 'next/image'
 import Layout from '../components/Layout'
 
 const PayOff = () => (
   <div className='h-payoff relative'>
     <div className='absolute lg:bottom-2/5 bottom-1/2 lg:px-8 w-full'>
-      <h1 className='font-bold lg:text-7xl text-center text-2xl'>👋 Hey there, I’m Giulia!</h1>
+      <h1 className='font-bold lg:text-7xl text-center text-3xl'>👋 Hey there, I’m Giulia!</h1>
       <h2 className='lg:text-3xl  text-center text-lg font-thin mt-12'>
         <Typewriter
           onInit={typewriter => {
@@ -34,26 +35,59 @@ const PayOff = () => (
 
 const Content = () => (
   <>
-    <div className='flex lg:flex-row flex-col items-center justify-around mt-16'>
-      <a href='/projects/mioassicuratore'><div className='bg-contain w-4/5 h-projects lg:w-projects bg-mio hover:bg-mio-hover bg-no-repeat cursor-pointer' /></a>
-      <a href='/projects/aron'> <div className=' lg:mt-0 bg-contain h-projects w-4/5 lg:w-projects bg-aron hover:bg-aron-hover bg-no-repeat cursor-pointer' /></a>
+    <div className='lg:flex lg:flex-row lg:justify-center'>
+      <a href='/projects/mioassicuratore' className='block mt-8 lg:mr-4'>
+        <Image
+          src='/sitogs_mioass.png'
+          alt='mioassicuratore project'
+          width={600}
+          height={397}
+          layout='intrinsic'
+          className='rounded object-cover'
+        />
+      </a>
+      <a href='/projects/aron' className='block mt-8 lg:ml-4'>
+        <Image
+          src='/aron_sitomio.png'
+          alt='aron project'
+          width={600}
+          height={397}
+          layout='intrinsic'
+          className='rounded object-cover'
+        />
+      </a>
     </div>
-    <div className='flex lg:flex-row flex-col items-center justify-around lg:mt-8'>
-      <div className='bg-contain w-4/5 h-projects lg:w-projects bg-drawithme hover:bg-drawithme-hover bg-no-repeat cursor-pointer' />
-      <div className='bg-contain lg:mt-0 h-projects w-4/5 lg:w-projects bg-mioapp hover:bg-mioapp-hover bg-no-repeat cursor-pointer' />
+    <div className='lg:flex lg:flex-row lg:justify-center'>
+      <a href='/projects/mioassicuratore_app' className='block mt-8 lg:mr-4'>
+        <Image
+          src='/mioapp.png'
+          alt='mioassicuratore app project'
+          width={600}
+          height={397}
+          layout='intrinsic'
+          className='rounded object-cover'
+        />
+      </a>
+      <a href='/projects/drawithme' className='block mt-8 lg:ml-4'>
+        <Image
+          src='/drawithme.png'
+          alt='drawithme project'
+          width={600}
+          height={397}
+          layout='intrinsic'
+          className='rounded object-cover'
+        />
+      </a>
     </div>
   </>
 
 )
 
-const Index = () => {
-  console.log('index')
-  return (
-    <Layout>
-      <PayOff />
-      <Content />
-    </Layout>
-  )
-}
+const Index = () => (
+  <Layout>
+    <PayOff />
+    <Content />
+  </Layout>
+)
 
 export default Index
