@@ -47,6 +47,7 @@ const Content = () => (
           height={397}
           layout='intrinsic'
           className='rounded object-cover'
+          priority
         />
       </a>
       <a href='/projects/aron' className='block mt-8 lg:ml-4'>
@@ -57,6 +58,7 @@ const Content = () => (
           height={397}
           layout='intrinsic'
           className='rounded object-cover'
+          priority
         />
       </a>
     </div>
@@ -69,6 +71,7 @@ const Content = () => (
           height={397}
           layout='intrinsic'
           className='rounded object-cover'
+          priority
         />
       </a>
       <a href='/projects/drawithme' className='block mt-8 lg:ml-4'>
@@ -79,6 +82,7 @@ const Content = () => (
           height={397}
           layout='intrinsic'
           className='rounded object-cover'
+          priority
         />
       </a>
     </div>

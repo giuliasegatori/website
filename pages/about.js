@@ -17,6 +17,7 @@ const About = () => (
           height={250}
           layout='intrinsic'
           className='rounded'
+          priority
         />
       </div>
       <div className='lg:w-2/3 mt-8'>
@@ -36,6 +37,7 @@ const About = () => (
         width='901'
         height='1280'
         layout='responsive'
+        priority
       />
     </div>
     <form method='get' action='resume.pdf' className='w-full lg:w-1/3 mx-auto text-center mt-8 px-8 py-4 border-4 border-giulia text-giulia cursor-pointer bg-white'>
