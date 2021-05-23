@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Layout from '../components/Layout'
 
 const Title = ({ isMobile }) => (
-  <div className={`${isMobile ? 'lg:hidden text-center' : 'hidden lg:block text-left ml-6'} font-bold text-3xl`}> 👋 Hey there, I&lsquo;m Giulia!</div>
+  <div className={`${isMobile ? 'lg:hidden text-center' : 'hidden lg:block text-left ml-6'} font-bold text-3xl mt-8`}> 👋 Hey there, I&lsquo;m Giulia!</div>
 )
 
 const About = () => (

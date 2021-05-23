@@ -3,8 +3,8 @@ import Layout from '../components/Layout'
 
 const Contact = () => (
   <Layout>
-    <div className='text-center lg:text-left mt-4 lg:mt-8 text-xl lg:text-6xl lg:ml-16 font-bold'>💬 Hey there, let&lsquo;s chat!</div>
-    <div className='border-4 p-16 rounded border-giulia mt-8 lg:mt-16 lg:max-w-screen-md lg:mx-auto'>
+    <div className='text-center lg:text-left mt-8 text-3xl lg:text-6xl lg:ml-16 font-bold'>💬 Hey there, let&lsquo;s chat!</div>
+    <div className='border-4 p-8 lg:p-16 rounded border-giulia mt-6 lg:mt-16 lg:max-w-screen-md lg:mx-auto'>
       <div className='font-bold text-2xl text-center'>Reach out to me!</div>
       <form
         className='flex flex-col mt-4'

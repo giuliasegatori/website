@@ -34,7 +34,7 @@ const PayOff = () => (
 )
 
 const Content = () => (
-  <>
+  <div id='projects' className='pt-24'>
     <div className='lg:flex lg:flex-row lg:justify-center'>
       <a href='/projects/mioassicuratore' className='block mt-8 lg:mr-4'>
         <Image
@@ -79,7 +79,7 @@ const Content = () => (
         />
       </a>
     </div>
-  </>
+  </div>
 
 )
 
