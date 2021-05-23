@@ -31,7 +31,7 @@ const Aron = () => (
 
       </div>
 
-      <div className='mt-14 text-giulia font-bold'>Prototype made with Figma. Developed with React.js, Gatsby and Strapi</div>
+      <div className='mt-14 text-gray-500 font-bold'>Prototype made with Figma. Developed with React.js, Gatsby and Strapi</div>
 
     </div>
   </Layout>

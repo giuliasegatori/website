@@ -51,7 +51,7 @@ const Mioassicuratore = () => (
         </div>
       </div>
 
-      <div className='font-bold text-giulia mt-14'>Prototypes and Wireframes made with Figma.
+      <div className='font-bold text-gray-500 mt-14'>Prototypes and Wireframes made with Figma.
         Developed with HTML, SASS and React.js
       </div>
 

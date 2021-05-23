@@ -29,7 +29,9 @@ const PayOff = () => (
       </h2>
 
     </div>
-    <img src='/right-arrow.png' alt='go down' className='inset-x-0 mx-auto bottom-0 absolute pb-4 animate-bounce' />
+    <a href='#projects'>
+      <img src='/right-arrow.png' alt='go down' className='inset-x-0 mx-auto bottom-0 absolute pb-4 animate-bounce' />
+    </a>
   </div>
 )
 

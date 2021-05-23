@@ -8,7 +8,7 @@ const Title = ({ isMobile }) => (
 const About = () => (
   <Layout>
     <Title isMobile />
-    <div className='lg:flex lg:flex-row'>
+    <div className='lg:flex lg:max-w-screen-lg lg:justify-center lg:mx-auto'>
       <div className='mt-8 flex justify-center'>
         <Image
           src='/giulia_linkedin.jpeg'
