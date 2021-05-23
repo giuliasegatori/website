@@ -1,9 +1,11 @@
 import * as React from 'react'
 import Layout from '../../components/Layout'
+import Breadcrumbs from '../../components/Breadcrumbs'
 
 const Mioassicuratore = () => (
   <Layout>
-    <img src='/mioassicuratore_gs_slider.png' alt='immagine mioassicuratore' className='mx-auto mt-20' />
+    <Breadcrumbs page='MioAssicuratore' />
+    <img src='/mioassicuratore_gs_slider.png' alt='immagine mioassicuratore' className='mx-auto mt-4' />
     <div className='text-center mt-8'>
       <a href='www.mioassicuratore.it' target='_blank'><div className='text-giulia font-bold'>MioAssicuratore.it</div></a>
       <div className='font-light italic text-gray-500 mt-2'>1st Italian Insurance Online Broker</div>

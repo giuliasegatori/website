@@ -1,9 +1,11 @@
 import * as React from 'react'
 import Layout from '../../components/Layout'
+import Breadcrumbs from '../../components/Breadcrumbs'
 
 const Aron = () => (
   <Layout>
-    <img src='/aron_mioassicuratore_gs.png' alt='immagine aron' className='mx-auto mt-20' />
+    <Breadcrumbs page='Aron' />
+    <img src='/aron_mioassicuratore_gs.png' alt='immagine aron' className='mx-auto mt-4' />
     <div className='text-center mt-8'>
       <a href='https://www.aroninsurtech.com/' target='_blank' rel='noreferrer'><div className='text-giulia font-bold'>Aron</div></a>
       <div className='font-light italic text-gray-500 mt-2'>Highly Technological Structured Microservices Insurtech Platform</div>
