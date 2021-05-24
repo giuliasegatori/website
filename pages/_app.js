@@ -1,7 +1,12 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 import 'tailwindcss/tailwind.css'
 import '../styles/global.css'
 
 import Head from 'next/head'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
+
+import * as gtm from '../services/GoogleTagManager'
 
 import '@fontsource/poppins/100.css'
 import '@fontsource/poppins/200.css'
@@ -14,6 +19,18 @@ import '@fontsource/poppins/800.css'
 import '@fontsource/poppins/900.css'
 
 function MyApp ({ Component, pageProps }) {
+  const router = useRouter()
+
+  useEffect(() => {
+    const handleRouteChange = url => {
+      gtm.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
+
   return (
     <>
       <Head>
