@@ -42,6 +42,23 @@ class MyDocument extends Document {
             }}
           />
           {/* End Google Tag Manager */}
+          <meta name="description" content="Giulia Segatori, UX/UI Designer, based in Rome, Italy."/>
+<meta property="og:site_name" content="Giulia Segatori"/>
+  		<meta property="og:locale" content="en_EN"/>
+  		<meta property="og:locale_alternate" content="en_EN"/>
+  		<meta property="og:type" content="website"/>
+  		<meta property="og:title" content="Giulia Segatori - UX & UI Designer"/>
+  		<meta property="og:description" content="Giulia Segatori, UX/UI Designer, based in Rome, Italy."/>
+  		<meta property="og:url" content="https://www.giuliasegatori.com"/>
+  		<meta property="twitter:site" content="https://www.giuliasegatori.com"/>
+  		<meta property="twitter:title" content="Giulia Segatori, UX/UI Designer, based in Rome, Italy."/>
+  		<meta property="twitter:description" content="Giulia Segatori, UX/UI Designer, based in Rome, Italy."/>
+  		<meta property="twitter:creator" content="Giulia Segatori"/>
+  		<meta property="og:image:width" content="1200"/>
+  		<meta property="og:image:height" content="627"/>
+  		<meta property="og:image:alt" content="Giulia Segatori, UX/UI Designer, based in Rome, Italy."/>
+  		<meta property="og:image" content="/metaimage.png"/>
+  		<meta property="twitter:image" content="/metaimage.png"/>
         </Head>
         <body>
           <noscript
