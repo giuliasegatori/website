@@ -24,7 +24,7 @@ const Mioassicuratore = () => (
 
       <div className='lg:flex lg:w-full lg:px-40 lg:mt-20'>
         <div className='font-bold lg:hidden block text-center mt-14'>A brand new identity</div>
-        <img src='/wireframe_mioassicuratore_gs.png' alt='wireframe mioassicuratore' className='w-96 mx-auto lg:w-1/2 mt-4' />
+        <img src='/mioass_bran_giulia.png' alt='wireframe mioassicuratore' className='w-96 mx-auto lg:w-1/2 mt-4' />
         <div className='lg:text-left lg:w-1/2 lg:ml-12'>
           <div className='font-bold lg:block hidden lg:mt-14'>A brand new identity</div>
           <div className='mt-4'>The starting point was to create
@@ -39,7 +39,7 @@ const Mioassicuratore = () => (
 
       <div className='lg:flex lg:flex-row-reverse lg:w-full lg:px-40 lg:mt-20'>
         <div className='font-bold lg:hidden block text-center mt-14'>User experience starts from within</div>
-        <img src='/crm_mioassicuratore_giulia.png' alt='crm mioassicuratore' className='w-96 mt-4 mx-auto lg:w-1/2 lg:ml-20' />
+        <img src='/crm_mioass_giulia.png' alt='crm mioassicuratore' className='w-96 mt-4 mx-auto lg:w-1/2 lg:ml-20' />
         <div className='lg:text-left lg:w-1/2 lg:ml-12'>
           <div className='font-bold lg:block hidden lg:text-3xl lg:text-left lg:mt-12'>User experience starts from within</div>
           <div className='mt-4 lg:text-left'>
