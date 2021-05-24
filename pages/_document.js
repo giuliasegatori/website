@@ -57,8 +57,8 @@ class MyDocument extends Document {
   		<meta property="og:image:width" content="1200"/>
   		<meta property="og:image:height" content="627"/>
   		<meta property="og:image:alt" content="Giulia Segatori, UX/UI Designer, based in Rome, Italy."/>
-  		<meta property="og:image" content="/metaimage.png"/>
-  		<meta property="twitter:image" content="/metaimage.png"/>
+  		<meta property="og:image" content="https://giuliasegatori.com/metaimage.png"/>
+  		<meta property="twitter:image" content="https://giuliasegatori.com/metaimage.png"/>
         </Head>
         <body>
           <noscript
