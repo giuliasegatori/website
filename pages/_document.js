@@ -1,77 +1,36 @@
-import React from 'react'
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from 'next/document'
+import { GTM_ID } from '../lib/gtm'
 
-import { GTM_ID } from '../services/GoogleTagManager'
+const FONTS = 'https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap'
 
-class MyDocument extends Document {
-  static async getInitialProps (ctx) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
-  }
-
-  render () {
-    return (
-      <Html lang='it'>
-        <Head>
-          <link
-            rel='preconnect'
-            href='https://fonts.gstatic.com'
-            crossOrigin='true'
-          />
-          <link
-            rel='preload'
-            as='style'
-            href='https://fonts.googleapis.com/css2?family=Poppins&display=swap'
-          />
-          <link
-            rel='stylesheet'
-            href='https://fonts.googleapis.com/css2?family=Poppins&display=swap'
-            media='print'
-            onLoad="this.media='all'"
-          />
-          <noscript>
-            <link
-              rel='stylesheet'
-              href='https://fonts.googleapis.com/css2?family=Poppins&display=swap'
-            />
-          </noscript>
-          {/* Google Tag Manager */}
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`
-            }}
-          />
-          {/* End Google Tag Manager */}
-          <meta name="description" content="Giulia Segatori, UX/UI Designer, based in Rome, Italy."/>
-<meta property="og:site_name" content="Giulia Segatori"/>
-  		<meta property="og:locale" content="en_EN"/>
-  		<meta property="og:locale_alternate" content="en_EN"/>
-  		<meta property="og:type" content="website"/>
-  		<meta property="og:title" content="Giulia Segatori - UX & UI Designer"/>
-  		<meta property="og:description" content="Giulia Segatori, UX/UI Designer, based in Rome, Italy."/>
-  		<meta property="og:url" content="https://www.giuliasegatori.com"/>
-  		<meta property="twitter:site" content="https://www.giuliasegatori.com"/>
-  		<meta property="twitter:title" content="Giulia Segatori, UX/UI Designer, based in Rome, Italy."/>
-  		<meta property="twitter:description" content="Giulia Segatori, UX/UI Designer, based in Rome, Italy."/>
-  		<meta property="twitter:creator" content="Giulia Segatori"/>
-  		<meta property="og:image:width" content="1200"/>
-  		<meta property="og:image:height" content="627"/>
-  		<meta property="og:image:alt" content="Giulia Segatori, UX/UI Designer, based in Rome, Italy."/>
-  		<meta property="og:image" content="https://giuliasegatori.com/metaimage.jpg"/>
-  		<meta property="twitter:image" content="https://giuliasegatori.com/metaimage.jpg"/>
-        </Head>
-        <body>
-          <noscript
-            dangerouslySetInnerHTML={{
-              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe>`
-            }}
-          />
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    )
-  }
+export default function Document () {
+  return (
+    <Html lang='it'>
+      <Head>
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='' />
+        <link rel='stylesheet' href={FONTS} />
+        <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
+        <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
+        <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
+        <link rel='manifest' href='/site.webmanifest' />
+        <meta name='theme-color' content='#F1F5F6' media='(prefers-color-scheme: light)' />
+        <meta name='theme-color' content='#0A1922' media='(prefers-color-scheme: dark)' />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`
+          }}
+        />
+      </Head>
+      <body>
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe>`
+          }}
+        />
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  )
 }
-
-export default MyDocument

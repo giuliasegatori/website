@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# giuliasegatori.com
 
-## Getting Started
+Il sito di Giulia Segatori, product designer. Next.js, pubblicato su Vercel: ogni push su `main` va online.
 
-First, run the development server:
+## Avvio in locale
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Poi apri http://localhost:3000.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Dove sono le cose
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- `pages/index.js`: la home, divisa in capitoli (Hero, Telemetria, Lavoro, Progetti, Archivio, Diario, Chi sono). I testi sono in coppia italiano/inglese con `t('italiano', 'english')`.
+- `content/diario/*.md`: gli articoli del diario. Il nome del file diventa l'indirizzo (`/diario/nome-file`).
+- `styles/global.css`: colori, caratteri e layout. I colori sono variabili in cima al file, con la versione scura sotto.
+- `components/`: header, contatti e lista articoli, condivisi tra le pagine.
+- `public/`: immagini, favicon e immagine di anteprima per i social (`og-image.jpg`).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Scrivere un nuovo articolo
 
-## Learn More
+Crea un file in `content/diario/`, per esempio `content/diario/il-mio-articolo.md`:
 
-To learn more about Next.js, take a look at the following resources:
+```markdown
+---
+title: "Il titolo"
+excerpt: "Una o due frasi che compaiono nella lista."
+tag: Feedback
+minutes: 3
+date: 2026-11-02
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Il testo, in Markdown.
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Gli articoli sono ordinati per data, dal più recente.
