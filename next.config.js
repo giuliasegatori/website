@@ -1,11 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
-  async redirects () {
-    return [
-      { source: '/projects/:slug*', destination: '/#archivio', permanent: true },
-      { source: '/about', destination: '/#chi-sono', permanent: true },
-      { source: '/contact', destination: '/#contatti', permanent: true }
-    ]
-  }
+  // The site is fully static: `next build` writes it to /out, which Netlify publishes.
+  // Redirects from the old pages live in netlify.toml.
+  output: 'export'
 }
