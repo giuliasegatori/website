@@ -1,6 +1,6 @@
 # giuliasegatori.com
 
-Il sito di Giulia Segatori, product designer. Next.js, pubblicato su Vercel: ogni push su `main` va online.
+Il sito di Giulia Segatori, product designer. Next.js, pubblicato su Netlify: ogni push su `main` va online.
 
 ## Avvio in locale
 
