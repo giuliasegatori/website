@@ -14,8 +14,14 @@ export default function Document () {
         <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
         <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
         <link rel='manifest' href='/site.webmanifest' />
-        <meta name='theme-color' content='#F1F5F6' media='(prefers-color-scheme: light)' />
-        <meta name='theme-color' content='#0A1922' media='(prefers-color-scheme: dark)' />
+        <meta name='theme-color' content='#F4F8F6' media='(prefers-color-scheme: light)' />
+        <meta name='theme-color' content='#0C1916' media='(prefers-color-scheme: dark)' />
+        {/* Apply the saved light/dark choice before the page paints, so it never flashes */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "try{var t=localStorage.getItem('gs-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}"
+          }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`

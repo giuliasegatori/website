@@ -255,46 +255,77 @@ function Journal ({ posts }) {
 
 function About () {
   const t = useT()
+  const obsessions = [
+    ['The Office', 'The Office', 100, t('Ogni episodio, più volte di quante sia sano ammettere.', 'Every episode, more times than is healthy to admit.')],
+    [t('Musica', 'Music'), t('Music', 'Music'), 100, t('Non posso vivere senza. Letteralmente: vedi telemetria.', "Can't live without it. Literally: see telemetry.")],
+    [t('Pizza fatta in casa', 'Homemade pizza'), '', 95, t('Con forno Effeuno P134HA. Non è un hobby, è un impegno.', 'With an Effeuno P134HA oven. Not a hobby, a commitment.')],
+    [t('Libri', 'Books'), '', 90, t('Li mangio come patatine. Spazio in casa: esaurito.', 'I eat them like crisps. Shelf space: sold out.')],
+    ['Hip hop', '', 75, t('Una volta a settimana, come a 12 anni. Il ginocchio non ha più 12 anni.', 'Once a week, like when I was 12. My knees are no longer 12.')],
+    [t('Talento nel canto', 'Singing talent'), '', 3, t('Mi sarebbe piaciuto tanto. Per il bene di tutti, resta un sogno.', 'I would have loved it. For everyone\'s sake, it stays a dream.')]
+  ]
   const sheet = [
-    [t('Ruolo', 'Role'), <><span className='cap'>Product designer</span><br /><span className='fn'>{t('MioAssicuratore, dal 2015', 'MioAssicuratore, since 2015')}</span></>],
-    [t('Studi', 'Studies'), t('Comunicazione, tecnologie e culture digitali alla Sapienza. Laureanda, quindi quasi.', 'Communication, Technologies and Digital Cultures at Sapienza University of Rome. Graduating, so almost there.')],
-    [t('Figli', 'Kids'), <span className='cap'>3</span>],
-    [t('Cane', 'Dog'), t('Bruno, Lagotto romagnolo. Un casino di cane.', 'Bruno, a Lagotto Romagnolo. A total mess of a dog.')],
-    [t('Serie in loop', 'On repeat'), t('The Office. Fissata, e non me ne vergogno.', 'The Office. Obsessed, and not ashamed.')],
-    [t('Forno', 'Oven'), t('Effeuno P134H. La pizza fatta in casa è una cosa seria.', 'Effeuno P134H. Homemade pizza is serious business.')],
-    [t('Allenamento', 'Training'), t('Hip hop una volta a settimana, come quando avevo 12 anni.', 'Hip hop once a week, like when I was 12.')],
-    [t('Canto', 'Singing'), t('Mi sarebbe tanto piaciuto. Non sono capace.', "I would have loved to. I can't.")],
-    [t('Libri', 'Books'), t('Li mangio come patatine. Spazio in casa: esaurito.', 'I eat them like crisps. Shelf space: sold out.')]
+    [t('Ruolo', 'Role'), t('Product designer a MioAssicuratore, dal 2015.', 'Product designer at MioAssicuratore, since 2015.')],
+    [t('Studi', 'Studies'), t('Laureanda in Comunicazione, tecnologie e culture digitali alla Sapienza. Quasi dottoressa.', 'Graduating in Communication, Technologies and Digital Cultures at Sapienza University of Rome. Almost there.')],
+    [t('Figli', 'Kids'), t('3. Vedi foto. Le identità sono protette.', '3. See photo. Identities protected.')],
+    [t('Cane', 'Dog'), t('Bruno, Lagotto romagnolo. Il quarto figlio, il meno obbediente.', 'Bruno, a Lagotto Romagnolo. The fourth child, the least obedient.')],
+    [t('Caffè', 'Coffee'), t('Zero. Mai. Funziono a musica.', 'Zero. Never. I run on music.')]
   ]
   return (
     <section className='chapter' id='chi-sono'>
       <div className='wrap'>
         <div className='ch-head'>
           <span className='num'>{t('Capitolo 05 · Fuori orario', 'Chapter 05 · Off the clock')}</span>
-          <h2 className='cap'>{t(<>Scheda <span className='it'>tecnica</span></>, <>Spec <span className='it'>sheet</span></>)}</h2>
+          <h2 className='cap'>{t(<>Scheda tecnica <span className='it'>non ufficiale</span></>, <>Spec sheet <span className='it'>(unofficial)</span></>)}</h2>
           <p>{t(
-            "Product designer, laureanda, mamma di tre. L'esaurimento nervoso è di serie, non un optional.",
-            'Product designer, graduating student, mum of three. The nervous breakdown comes as standard, not as an extra.'
+            "Product designer, laureanda, mamma di tre, proprietaria di un cane ingestibile. L'esaurimento nervoso è di serie, non un optional.",
+            'Product designer, graduating student, mum of three, owner of an unmanageable dog. The nervous breakdown comes as standard, not as an extra.'
           )}</p>
         </div>
+
+        <div className='album'>
+          <figure className='polaroid p1'>
+            <img src='/giulia-sposa.jpg' alt={t('Giulia in abito da sposa, seduta in giardino, ride', 'Giulia in her wedding dress, sitting in a garden, laughing')} width='900' height='900' loading='lazy' />
+            <figcaption>{t('Il giorno in cui ho detto sì al CTO.', 'The day I said yes to the CTO.')}</figcaption>
+          </figure>
+          <figure className='polaroid p2'>
+            <img src='/figli.jpg' alt={t('I tre figli di Giulia in mare, con i volti sostituiti da quelli di tre celebrità', "Giulia's three kids in the sea, with their faces swapped for three celebrities")} width='900' height='1188' loading='lazy' />
+            <figcaption>{t('Gli stakeholder di casa. Volti protetti per privacy.', 'The stakeholders at home. Faces protected for privacy.')}</figcaption>
+          </figure>
+          <div className='sticker' aria-hidden='true'>{t(<>3 figli<br />1 cane<br />0 caffè</>, <>3 kids<br />1 dog<br />0 coffee</>)}</div>
+        </div>
+
         <div className='about'>
-          <dl className='sheet'>
-            {sheet.map(([k, v], i) => <div key={i}><dt>{k}</dt><dd>{v}</dd></div>)}
-          </dl>
-          <aside className='tracks'>
-            <div className='head'>
-              <span className='eyebrow'>{t('In cuffia, sempre', 'Always in my headphones')}</span>
-              <span className='eq' aria-hidden='true'><i /><i /><i /><i /></span>
-            </div>
-            <ol>
-              <li>Tame Impala</li>
-              <li>Thundercat</li>
-              <li>Hayley Williams</li>
-              <li>Marco Castello</li>
-              <li>The Reign of Kindo<sup className='star'>*</sup></li>
-            </ol>
-            <p className='fn' style={{ margin: '12px 0 0' }}>{t('* Sì, li conosco solo io.', "* Yes, I'm the only one who knows them.")}</p>
-          </aside>
+          <div className='obsessions'>
+            <div className='eyebrow'>{t('Livelli di fissazione', 'Obsession levels')}</div>
+            <ul>
+              {obsessions.map(([name, , pct, note]) => (
+                <li key={pct + String(name)}>
+                  <div className='ob-top'><span className='ob-name'>{name}</span><span className='ob-pct'>{pct}%</span></div>
+                  <div className='meter' role='img' aria-label={`${pct}%`}><span style={{ width: `${pct}%` }} /></div>
+                  <p className='fn'>{note}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className='side'>
+            <dl className='sheet'>
+              {sheet.map(([k, v], i) => <div key={i}><dt>{k}</dt><dd>{v}</dd></div>)}
+            </dl>
+            <aside className='tracks'>
+              <div className='head'>
+                <span className='eyebrow'>{t('In cuffia, sempre', 'Always in my headphones')}</span>
+                <span className='eq' aria-hidden='true'><i /><i /><i /><i /></span>
+              </div>
+              <ol>
+                <li>Tame Impala</li>
+                <li>Thundercat</li>
+                <li>Hayley Williams</li>
+                <li>Marco Castello</li>
+                <li>The Reign of Kindo<sup className='star'>*</sup></li>
+              </ol>
+              <p className='fn' style={{ margin: '12px 0 0' }}>{t('* Sì, li conosco solo io.', "* Yes, I'm the only one who knows them.")}</p>
+            </aside>
+          </div>
         </div>
       </div>
     </section>
