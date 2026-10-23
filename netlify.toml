@@ -5,6 +5,10 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Use the current Next.js runtime (the one installed in the dashboard dates from 2021)
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 # Old pages from the 2021 site
 [[redirects]]
   from = "/projects/*"
