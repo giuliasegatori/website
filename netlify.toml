@@ -1,0 +1,22 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Old pages from the 2021 site
+[[redirects]]
+  from = "/projects/*"
+  to = "/#archivio"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/#chi-sono"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/#contatti"
+  status = 301
